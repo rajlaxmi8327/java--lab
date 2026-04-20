@@ -1,11 +1,23 @@
-package com.scsvmv.javalab;
+package com.scsvmv.javalab.hello;
+import java.util.Date;
 
 /*
- *Simple Hello class
- *Always wishes Hello World
+ *Hello class
+ *Demonstrates method overloading and command-line arguments
  */
-public class Hello {
+public class Hello{
+
+  public Hello(){
+  }
+
   public void wish(){
-  System.out.println("Hello World");
+    System.out.println("Hello World");
+}
+public void wish(String name){
+  System.out.println("Hello"+name);
+}
+public void wishWithDate(String name){
+  Date today = new Date();
+  System.out.println("Hello"+name+"|Date:"+today);
  }
 }
